@@ -6,12 +6,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#fff"
-    android:padding="20dp">
+    android:padding="24dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp">
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
 
         <ImageView
             android:id="@+id/hamburger_btn"
@@ -32,13 +33,11 @@
 
         <ImageView
             android:id="@+id/add_task"
-            android:background="#f2f2f2"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_height="40dp"
             android:layout_width="40dp"
-            android:padding="5dp"
-            android:src="@drawable/ic_outline_add_24" />
+            android:src="@drawable/ic_outline_notifications_24" />
 
     </RelativeLayout>
 
@@ -58,11 +57,9 @@
 
                 <RelativeLayout
                     android:background="#fff"
-                    android:elevation="8dp"
+                    android:elevation="4dp"
                     android:layout_height="40dp"
                     android:layout_marginBottom="16dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
                     android:layout_marginTop="16dp"
                     android:layout_width="match_parent">
 
@@ -70,7 +67,7 @@
                         android:id="@+id/search_text"
                         android:layout_centerVertical="true"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginLeft="16dp"
                         android:layout_width="wrap_content"
                         android:text="Search for Your Task" />
 
@@ -79,7 +76,7 @@
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:layout_height="40dp"
-                        android:layout_marginRight="15dp"
+                        android:layout_marginRight="8dp"
                         android:layout_width="40dp"
                         android:src="@drawable/ic_baseline_search_24" />
 
@@ -87,31 +84,47 @@
 
             </RelativeLayout>
 
-            <TextView
-                android:id="@+id/today_list"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
+            <RelativeLayout
+                android:background="#fff"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="Today Task"
-                android:layout_marginTop="16dp"
-                android:textColor="#000"
-                android:textSize="18sp" />
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/today_list"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Today Task"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/add_task"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@drawable/ic_outline_add_24" />
+
+            </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/make_selection_sms_box"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
                 android:background="#f2f2f2"
-                android:padding="10dp">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:padding="8dp" >
 
                 <TextView
                     android:id="@+id/task_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Ke Vet"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:layout_marginLeft="16dp"/>
 
                 <TextView
                     android:id="@+id/task_des"
@@ -120,14 +133,15 @@
                     android:layout_below="@id/task_title"
                     android:text="Vet Unair - 14.30"
                     android:textColor="#000"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    android:layout_marginLeft="16dp"/>
 
                 <ImageView
                     android:id="@+id/task_option_btn"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_height="40dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginRight="8dp"
                     android:layout_width="40dp"
                     android:src="@drawable/ic_baseline_more_vert_24" />
 

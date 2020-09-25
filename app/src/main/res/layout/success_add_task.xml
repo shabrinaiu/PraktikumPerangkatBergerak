@@ -26,7 +26,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_margin="20dp"
-        android:src="@drawable/ic_outline_check_circle_outline_24" />
+        android:src="@drawable/ic_baseline_check_circle_24" />
 
     <TextView
         android:id="@+id/success_message_description"
